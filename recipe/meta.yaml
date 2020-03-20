@@ -1,4 +1,4 @@
-{% set version = '0.3.3' %}
+{% set version = "0.3.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lgr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lgr/lgr_{{ version }}.tar.gz
-  sha256: 8840d099e6f0eedb1337d84c027f93f0513d7a3cbf0581bd01e22ec2375a6ac7
+  sha256: 4b4db60c45d4e22dafc63907fefa911b7d85b106bb35ad5be76247230a161893
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -38,14 +38,12 @@ test:
 about:
   home: https://s-fleck.github.io/lgr
   license: MIT
-  summary: A flexible, feature-rich yet light-weight logging framework based on 'R6' classes.
-    It supports hierarchical loggers, custom log levels, arbitrary data fields in log
-    events, logging to plaintext, 'JSON', (rotating) files, memory buffers, and databases,
-    as well as email and push notifications. For a full list of features with examples
-    please refer to the package vignette.
+  summary: A flexible, feature-rich yet light-weight logging framework based on 'R6' classes. It supports hierarchical loggers, custom log levels, arbitrary data
+    fields in log events, logging to plaintext, 'JSON', (rotating) files, memory buffers, and databases, as well as email and push notifications. For a full list
+    of features with examples please refer to the package vignette.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
