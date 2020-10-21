@@ -5,11 +5,9 @@ Home: https://s-fleck.github.io/lgr
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-lgr-feedstock/blob/master/LICENSE.txt)
 
 Summary: A flexible, feature-rich yet light-weight logging framework based on 'R6' classes. It supports hierarchical loggers, custom log levels, arbitrary data fields in log events, logging to plaintext, 'JSON', (rotating) files, memory buffers, and databases, as well as email and push notifications. For a full list of features with examples please refer to the package vignette.
-
-
 
 Current build status
 ====================
