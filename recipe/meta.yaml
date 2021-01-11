@@ -1,4 +1,4 @@
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lgr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lgr/lgr_{{ version }}.tar.gz
-  sha256: a9bddc98328a5cc539ca649e1d10659c02ddc6238e24627c5230445be128c5a4
+  sha256: d9c39b5891f4a1b32e9488f40df7df49ac4ec8cb41c1dbea1b95eb332553934c
 
 build:
   merge_build_host: true  # [win]
