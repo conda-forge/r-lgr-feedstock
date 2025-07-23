@@ -1,4 +1,4 @@
-{% set version = "0.4.4" %}
+{% set version = "0.5.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lgr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lgr/lgr_{{ version }}.tar.gz
-  sha256: 8c4011e34fa1ca42df88f64028e90c4ef9ce76c0e133eac1052c30cb0cdfa127
+  sha256: c285a559ea310010be5be56df861b4e887c5ac095eb7b2218bc95578dc780bc0
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
